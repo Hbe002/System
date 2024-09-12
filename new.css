@@ -1,0 +1,65 @@
+
+        body,html {
+            background-image: url(/image/pexels-mart-production-8472919.jpg);
+            width: 100%;
+            background-size: contain;
+            background-position: center;
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: ; 
+            font-family: Arial, sans-serif;
+        }
+
+        
+        .grading-system {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 24px;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 5px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            border: 1px rgb(185, 158, 158) solid;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: orange;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #458ea0;
+        }
+
+        /* p {
+            font-size: 14px;
+            color: red;
+        } */
+
+        #display {
+            font-size: 18px;
+            margin-top: 20px;
+            color: black;
+        }
+    

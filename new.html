@@ -1,0 +1,69 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grading System</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+
+  
+  
+<body>
+
+    <audio autoplay>
+        <source src="audio/mixkit-cartoon-girl-saying-no-no-no-2257.wav" type="audio/wav">
+    </audio>
+
+    <div class="grading-system">
+        <p><img src="image/co (1).jpg" style="width: 20%; height: 20%;"></p>
+        <h1>Grading System</h1>
+        <p style=" display: none;" id="errorMsg">Guy, fill it </p>
+        <input type="number" placeholder="Score" id="score">
+        <button onclick="checkGrade()">Check</button>
+        <div id="display"></div>
+    </div>
+
+    <script>
+        function checkGrade(){
+            
+            var score = document.getElementById('score');
+            var errorMsg = document.getElementById('errorMsg');
+            var display = document.getElementById('display');
+            
+            
+            var userScore = score.value;
+            var newScore = Number(userScore);
+            
+            
+            if (userScore === ""){
+                errorMsg.style.display = 'block'; 
+                display.innerHTML = ""; 
+            } else {
+                errorMsg.style.display = 'none'; 
+                
+            
+                if(newScore >= 0 && newScore < 40){
+                    display.innerText = 'F - You failed';
+                } else if (newScore >= 40 && newScore < 45){
+                    display.innerText = 'E - Fair';
+                } else if (newScore >= 45 && newScore < 50){
+                    display.innerText = 'D - Pass';
+                } else if (newScore >= 50 && newScore < 60){
+                    display.innerText = 'C - Credit';
+                } else if (newScore >= 60 && newScore < 70){
+                    display.innerText = 'B - Good';
+                } else if (newScore >= 70 && newScore <= 100){
+                    display.innerText = 'A - Excellent';
+                } else {
+                    display.innerText = 'Invalid score'; 
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>
